@@ -2,7 +2,7 @@
 
 while getopts k:h:s: flag
 do
-	case "${flag} in
+	case "${flag}" in
 		k) key=${OPTARG};;
 		h) hostname=${OPTARG};;
 		s) services=${OPTARG};;
