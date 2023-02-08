@@ -18,7 +18,7 @@ fi
 printf "\n----> Deploying files for $service to $hostname with $key\n"
 
 printf "\n----> Clear out the previous distribution on the target.\n"
-ssh -i "$key" ubuntu@hostname << ENDSSH
+ssh -i "$key" ubuntu@$hostname << ENDSSH
 rm -rf services/${service}/public
 mkdir -p services/${service}/public
 ENDSSH
