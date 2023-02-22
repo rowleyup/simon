@@ -36,7 +36,7 @@ menu .nav-item {
 	padding: 0 0.3em;
 }
 
-footer a {
+footer a:nth-child(even) {
 	float: right;
 }
 
