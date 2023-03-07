@@ -49,7 +49,7 @@ class Game {
 
 		document.querySelectorAll('.game-button').forEach((el, i) => {
 			if (i < btnDescriptions.length) {
-				this.button.set(el.id, new Button(btnDescriptions[i], el));
+				this.buttons.set(el.id, new Button(btnDescriptions[i], el));
 			}
 		});
 
@@ -172,6 +172,6 @@ function delay(milliseconds) {
 	});
 }
 
-function loadSounds(filename) {
+function loadSound(filename) {
 	return new Audio('assets/' + filename);
 }
