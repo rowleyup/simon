@@ -233,5 +233,5 @@ function delay(milliseconds) {
 }
 
 function loadSound(filename) {
-  return new Audio('assets/' + filename);
+  return new Audio(filename);
 }
